@@ -3,16 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Dylan Larimer">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <h1>Personal Favorite</h1>
 
-    <div>
-        <a href="main.html">Main - </a>
-        <a href="ezBreeds.html">Easiest Breeds - </a>
-        <a href="UserFav.html">Your Favorite</a>
-    </div>
+    <nav>
+        <a href="main.html" class="nav">Main</a>
+        <a href="ezBreeds.html" class="nav">Easiest Breeds</a>
+        <a href="UserFav.html" class="nav">Your Favorite</a>
+    </nav>
 
     <p>
         My Personal favorite dog breed are the muts. I've had two so far and they both proved to be the most loyal 
@@ -20,12 +22,15 @@
     </p>
     <img src="Images/3760.jpg" height="400px">
     <img src="Images/IMG_0749.JPG" height="400px">
-    <h2>Your Favorite</h2>
-    <form>
-        <input type="text" name="name" placeholder="Name"><br>
-        <input type="text" name="email" placeholder="Email"><br>
-        <input type="text" name="breed" placeholder="Breed"><br>
-        <input type="submit">
-    </form>
+
+    <div id="form-container">
+        <form>
+          <h2 id="form-header">Your Favorite</h2>
+          <input type="text" name="name" placeholder="Name"><br>
+          <input type="text" name="email" placeholder="Email"><br>
+          <input type="text" name="breed" placeholder="Breed"><br>
+          <input type="submit">
+        </form>
+    </div>
 </body>
 </html>
